@@ -13,26 +13,26 @@ const toneStyles: Record<
   Tone,
   {
     name: string
-    avatarText: string
-    accent: string
+    avatar: string
+    bubble: string
   }
 > = {
   isaac: {
-    name: "text-[#c86c2e]",
-    avatarText: "text-[#c86c2e]",
-    accent: "before:bg-[#c86c2e]",
+    name: "text-black",
+    avatar: "bg-[#e8e4dc] text-black/65",
+    bubble: "border-black/10",
   },
 
   taylor: {
-    name: "text-[#b24c7f]",
-    avatarText: "text-[#b24c7f]",
-    accent: "before:bg-[#b24c7f]",
+    name: "text-black",
+    avatar: "bg-[#e8e4dc] text-black/65",
+    bubble: "border-black/10",
   },
 
   zac: {
-    name: "text-[#932a2f]",
-    avatarText: "text-[#932a2f]",
-    accent: "before:bg-[#932a2f]",
+    name: "text-black",
+    avatar: "bg-[#e8e4dc] text-black/65",
+    bubble: "border-black/10",
   },
 }
 
@@ -49,28 +49,41 @@ export default function Message({
   }
 
   return (
-    <div className="flex items-start gap-4">
+    <article className="flex items-start gap-4">
       {/* Avatar */}
       <div
-        className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-sm font-regular ${t.avatarText}`}
+        className={[
+          "flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full",
+          "text-sm font-semibold",
+          t.avatar,
+        ].join(" ")}
       >
         {initial}
       </div>
 
       {/* Content */}
-      <div className="flex-1">
-        {/* Speaker name */}
-        <p className={`text-sm font-medium tracking-wide ${t.name}`}>
+      <div className="min-w-0 flex-1">
+        {/* Speaker */}
+        <p
+          className={[
+            "text-sm font-semibold tracking-wide",
+            t.name,
+          ].join(" ")}
+        >
           {name}
         </p>
 
-        {/* Bubble */}
+        {/* Transcript text */}
         <div
-          className={`relative mt-2 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 text-sm leading-relaxed text-white/90`}
+          className={[
+            "mt-2 rounded-[18px] border bg-[#fafafa] px-5 py-4",
+            "text-[15px] leading-7 text-black/75",
+            t.bubble,
+          ].join(" ")}
         >
           {children}
         </div>
       </div>
-    </div>
+    </article>
   )
 }

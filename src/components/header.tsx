@@ -1,28 +1,39 @@
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/40 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-4">
-        <div className="text-lg flex tracking-wide text-white">
-          <div className="font-bold">hanson</div>
-           <div className="font-light">hotline</div>
-        </div>
+    <header className="relative z-50 bg-white">
+      <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-6 md:px-10 lg:px-12">
+        
+        <a
+          href="/"
+          className="flex items-center text-[24px] tracking-[-0.04em] text-black md:text-[28px]"
+        >
+          <span className="font-bold text-black">hanson</span>
+          <span className="font-light">hotline</span>
+        </a>
 
-        <nav className="flex items-center gap-8 text-sm text-white/60">
+        <nav className="flex items-center gap-6 text-sm font-medium text-black md:gap-10 md:text-base">
           <a
-            href="#what-is-hotline"
-            className="transition hover:text-[#ec7d33]"
+            href="/#archive"
+            className="transition-opacity hover:opacity-50"
           >
-         About
+            Archive
           </a>
 
+<a
+  href="/about"
+  className="transition-opacity hover:opacity-50"
+>
+  About
+</a>
 
-          <a
-            href="#who-is-quietoode"
-            className="transition hover:text-[#ec7d33]"
-          >
-           Contact
-          </a>
+   <a
+  href="/contact"
+  className="transition-opacity hover:opacity-50"
+>
+  Contact
+</a>
         </nav>
+
       </div>
     </header>
   )
