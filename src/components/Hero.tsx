@@ -6,7 +6,7 @@
 </h1>
 
   <p className="mx-auto max-w-[650px] text-2xl font-medium text-white/90 kicker mt-[0px]">
-    An archive of messages left by <u>hanson</u> for their fans
+    An archive of messages left by the band <u>hanson</u> for their fans
   </p>
 
 
