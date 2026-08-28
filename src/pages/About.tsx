@@ -15,31 +15,30 @@ export default function About() {
             aria-label="About page navigation"
           >
             <a
-              href="#project"
-              className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
-            >
-              Project
-            </a>
-
-            <a
               href="#hotline"
               className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
             >
-              The Hotline
+              Hanson Hotline
+            </a>
+
+            <a
+              href="#project"
+              className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
+            >
+              Project Notes
             </a>
 
             <a
               href="#creator"
               className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
             >
-              About Michele
+              The Creator
             </a>
           </nav>
         </div>
       </div>
 
       <main>
-
         {/* =====================================================
             INTRO
         ====================================================== */}
@@ -48,8 +47,8 @@ export default function About() {
             About the archive
           </p>
 
-        <h1 className="mt-5 max-w-[1000px] text-[clamp(52px,7vw,94px)] font-semibold leading-[0.94] tracking-[-0.035em] text-black">
-  Old messages.
+          <h1 className="mt-5 max-w-[1000px] text-[clamp(52px,7vw,94px)] font-semibold leading-[0.94] tracking-[-0.035em] text-black">
+            Old messages.
             <br />
             New interface.
           </h1>
@@ -61,114 +60,8 @@ export default function About() {
           </p>
         </section>
 
-
         {/* =====================================================
-            PROJECT
-        ====================================================== */}
-        <section
-          id="project"
-          className="scroll-mt-28 border-t border-black/10"
-        >
-          <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-24 md:grid-cols-[0.8fr_1.2fr] md:px-10 md:py-32">
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
-                The project
-              </p>
-
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-                Preserving an archive without preserving its old UX.
-              </h2>
-            </div>
-
-            <div className="max-w-[700px] space-y-6 text-lg leading-8 text-black/65">
-              <p>
-                The content may be from another era, but the interface does
-                not need to be.
-              </p>
-
-              <p>
-                I designed Hanson Hotline as a modern way to navigate a
-                chronological collection of audio recordings and transcripts.
-                Instead of presenting the material as a long list of files,
-                the archive is structured around years, individual dates,
-                recordings and readable transcript entries.
-              </p>
-
-              <p>
-                The visual system deliberately combines contemporary interface
-                patterns with references to the original period: oversized
-                typography, generous white space and modular UI are paired
-                with late-1990s communications technology and colors inspired
-                by the era.
-              </p>
-            </div>
-          </div>
-        </section>
-
-
-        {/* =====================================================
-            UX / PRODUCT
-        ====================================================== */}
-        <section className="bg-[#fafafa]">
-          <div className="mx-auto max-w-[1200px] px-6 py-24 md:px-10 md:py-32">
-            <div className="max-w-[750px]">
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
-                Design &amp; development
-              </p>
-
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-                Designed and built as one system.
-              </h2>
-
-              <p className="mt-6 text-lg leading-8 text-black/60">
-                The project combines UX, visual design and front-end
-                implementation rather than treating them as separate phases.
-              </p>
-            </div>
-
-            <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <InfoCard
-                number="01"
-                title="Information architecture"
-                body="Recordings are organized into a navigable year → date → recording → transcript structure."
-              />
-
-              <InfoCard
-                number="02"
-                title="Interaction design"
-                body="Year navigation, date selection, playback controls and transcript navigation turn a static collection into a browsable archive."
-              />
-
-              <InfoCard
-                number="03"
-                title="Visual design"
-                body="A contemporary monochromatic UI lets archival imagery and selective late-'90s color references carry the nostalgia."
-              />
-
-              <InfoCard
-                number="04"
-                title="Audio experience"
-                body="Original recordings are presented as first-class content rather than attachments buried inside a page."
-              />
-
-              <InfoCard
-                number="05"
-                title="Responsive UI"
-                body="Components are designed to remain understandable and usable as the interface moves between desktop and smaller screens."
-              />
-
-              <InfoCard
-                number="06"
-                title="Implementation"
-                body="The archive is implemented as a React + TypeScript application with reusable data-driven components."
-              />
-            </div>
-          </div>
-        </section>
-
-
-        {/* =====================================================
-            ORIGINAL HANSON HOTLINE
+            HANSON HOTLINE
         ====================================================== */}
         <section
           id="hotline"
@@ -176,14 +69,13 @@ export default function About() {
         >
           <div className="mx-auto max-w-[1200px] px-6 py-24 md:px-10 md:py-32">
             <div className="grid gap-16 md:grid-cols-[1.15fr_0.85fr]">
-
               <div className="max-w-[700px]">
                 <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
-                  The original hotline
+                  Hanson Hotline
                 </p>
 
                 <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
-                  What was the Hanson Hotline?
+                  Before the feed, there was a phone number.
                 </h2>
 
                 <div className="mt-8 space-y-6 text-lg leading-8 text-black/65">
@@ -226,24 +118,125 @@ export default function About() {
                   description="Recordings are paired with structured transcripts."
                 />
               </div>
-
             </div>
           </div>
         </section>
 
+        {/* =====================================================
+            PROJECT NOTES
+        ====================================================== */}
+        <section
+          id="project"
+          className="scroll-mt-28 border-t border-black/10 bg-[#fafafa]"
+        >
+          <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-24 md:grid-cols-[0.8fr_1.2fr] md:px-10 md:py-32">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
+                Project Notes
+              </p>
+
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+                Preserving an archive without preserving its old UX.
+              </h2>
+            </div>
+
+            <div className="max-w-[700px] space-y-6 text-lg leading-8 text-black/65">
+              <p>
+                The content may be from another era, but the interface does
+                not need to be.
+              </p>
+
+              <p>
+                I designed Hanson Hotline as a modern way to navigate a
+                chronological collection of audio recordings and transcripts.
+                Instead of presenting the material as a long list of files,
+                the archive is structured around years, individual dates,
+                recordings and readable transcript entries.
+              </p>
+
+              <p>
+                The visual system deliberately combines contemporary interface
+                patterns with references to the original period: oversized
+                typography, generous white space and modular UI are paired
+                with late-1990s communications technology and selective
+                references to the era.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* =====================================================
-            ABOUT MICHELE
+            DESIGN & FULL-STACK DEVELOPMENT
+        ====================================================== */}
+        <section className="border-t border-black/10 bg-[#fafafa]">
+          <div className="mx-auto max-w-[1200px] px-6 pb-24 md:px-10 md:pb-32">
+            <div className="max-w-[750px]">
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
+                Design &amp; full-stack development
+              </p>
+
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+                Designed and built as one system.
+              </h2>
+
+              <p className="mt-6 text-lg leading-8 text-black/60">
+                The project combines UX, visual design, front-end and back-end
+                development rather than treating design and implementation as
+                separate phases.
+              </p>
+            </div>
+
+            <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <InfoCard
+                number="01"
+                title="Information architecture"
+                body="Recordings are organized into a navigable year → date → recording → transcript structure."
+              />
+
+              <InfoCard
+                number="02"
+                title="Interaction design"
+                body="Year navigation, date selection, playback controls and transcript navigation turn a static collection into a browsable archive."
+              />
+
+              <InfoCard
+                number="03"
+                title="Visual design"
+                body="A contemporary monochromatic UI lets archival imagery and selective late-'90s color references carry the nostalgia."
+              />
+
+              <InfoCard
+                number="04"
+                title="Audio experience"
+                body="Original recordings are presented as first-class content rather than attachments buried inside a page."
+              />
+
+              <InfoCard
+                number="05"
+                title="Responsive UI"
+                body="Components are designed to remain understandable and usable as the interface moves between desktop and smaller screens."
+              />
+
+              <InfoCard
+                number="06"
+                title="Full-stack implementation"
+                body="The archive combines a React + TypeScript interface with the back-end systems used to structure, manage and deliver its archival content."
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================================
+            THE CREATOR
         ====================================================== */}
         <section
           id="creator"
           className="scroll-mt-28 border-t border-black/10"
         >
           <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-24 md:grid-cols-[0.75fr_1.25fr] md:px-10 md:py-32">
-
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
-                About the creator
+                The Creator
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
@@ -253,17 +246,16 @@ export default function About() {
 
             <div className="max-w-[720px] space-y-6 text-lg leading-8 text-black/65">
               <p>
-                I&apos;m an architect, software developer and Human-Computer
-                Interaction graduate student interested in the space where
-                design and implementation meet.
+                I&apos;m an architect, software developer and M.HCI Candidate
+                interested in the space where design and implementation meet.
               </p>
 
               <p>
-                I work across UX, visual design and development, which means
-                projects like Hanson Hotline can move from information
-                architecture and interface decisions directly into a working
-                product without handing the design off at the point where
-                implementation begins.
+                I work across UX, visual design and full-stack development,
+                which means projects like Hanson Hotline can move from
+                information architecture and interface decisions through
+                front-end and back-end development into a working product
+                without handing the design off when implementation begins.
               </p>
 
               <p>
@@ -284,19 +276,17 @@ export default function About() {
                 </a>
 
                 <a
-                  href="https://instagram.com/mmmbopnet"
+                  href="https://www.instagram.com/quietoodes/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-black underline decoration-1 underline-offset-4 transition-opacity hover:opacity-50"
                 >
-                  @mmmbopnet
+                  @quietoodes
                 </a>
               </div>
             </div>
-
           </div>
         </section>
-
 
         {/* =====================================================
             DISCLAIMER / FOOTER
@@ -304,7 +294,6 @@ export default function About() {
         <section className="border-t border-black/10">
           <div className="mx-auto max-w-[1200px] px-6 py-16 md:px-10">
             <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
-
               <p className="text-sm font-semibold text-black">
                 Hanson Hotline
               </p>
@@ -322,16 +311,13 @@ export default function About() {
                 </a>
                 .
               </p>
-
             </div>
           </div>
         </section>
-
       </main>
     </div>
   )
 }
-
 
 /* =========================================================
    INFO CARD
@@ -362,7 +348,6 @@ function InfoCard({
     </article>
   )
 }
-
 
 /* =========================================================
    STAT CARD

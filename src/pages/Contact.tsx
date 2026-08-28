@@ -14,8 +14,8 @@ export default function Contact() {
             Contact &amp; community
           </p>
 
-        <h1 className="mt-5 max-w-[1000px] text-[clamp(52px,7vw,94px)] font-semibold leading-[0.94] tracking-[-0.035em] text-black">
-    Say hello.
+          <h1 className="mt-5 max-w-[1000px] text-[clamp(52px,7vw,94px)] font-semibold leading-[0.94] tracking-[-0.035em] text-black">
+            Say hello.
           </h1>
 
           <p className="mt-10 max-w-[680px] text-xl leading-relaxed text-black/55 md:text-2xl">
@@ -23,7 +23,6 @@ export default function Contact() {
             the Hanson universe.
           </p>
         </section>
-
 
         {/* =====================================================
             PRIMARY LINKS
@@ -36,23 +35,22 @@ export default function Contact() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-
             {/* Hanson */}
             <SocialCard
               eyebrow="Official"
               title="Hanson"
               handle="@hanson"
               description="The band's official Instagram — music, tours, releases and everything happening now."
-              href="https://www.instagram.com/hanson"
+              href="https://www.instagram.com/hanson/"
             />
 
             {/* Hanson Hotline */}
             <SocialCard
               eyebrow="The archive"
               title="Hanson Hotline"
-              handle="@mmmbopnet"
-              description="Follow the archive and its collection of Hanson history, recordings and memories."
-              href="https://www.instagram.com/mmmbopnet"
+              handle="@thehansonhotline"
+              description="Follow the archive for Hanson Hotline recordings, memories and pieces of Hanson history."
+              href="https://www.instagram.com/thehansonhotline/"
             />
 
             {/* Michele */}
@@ -61,20 +59,17 @@ export default function Contact() {
               title="Michele"
               handle="@quietoodes"
               description="Design, development, drawings and the other things I'm making."
-              href="https://www.instagram.com/quietoodes"
+              href="https://www.instagram.com/quietoodes/"
               yellow
             />
-
           </div>
         </section>
-
 
         {/* =====================================================
             HANSON UNIVERSE
         ====================================================== */}
         <section className="border-t border-black/10">
           <div className="mx-auto max-w-[1200px] px-6 py-24 md:px-10 md:py-28">
-
             <div className="max-w-[680px]">
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
                 Around the Hanson universe
@@ -91,7 +86,6 @@ export default function Contact() {
             </div>
 
             <div className="mt-14 grid gap-4 md:grid-cols-3">
-
               {/* Mac Hanson */}
               <SocialCard
                 eyebrow="Music"
@@ -118,18 +112,15 @@ export default function Contact() {
                 description="Taylor's wife and a homeschooling extraordinaire — thoughtful glimpses of family, learning and home, shared with eloquence, elegance and seemingly endless patience."
                 href="https://www.instagram.com/nataliehanson/"
               />
-
             </div>
           </div>
         </section>
-
 
         {/* =====================================================
             ARCHIVE CONTRIBUTIONS
         ====================================================== */}
         <section className="border-t border-black/10 bg-white">
           <div className="mx-auto grid max-w-[1200px] gap-10 px-6 py-24 md:grid-cols-[0.8fr_1.2fr] md:px-10 md:py-28">
-
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/40">
                 The archive
@@ -150,20 +141,18 @@ export default function Contact() {
               <p className="mt-6 text-lg leading-8 text-black/60">
                 Send a message to{" "}
                 <a
-                  href="https://www.instagram.com/mmmbopnet"
+                  href="https://www.instagram.com/thehansonhotline/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-black underline underline-offset-4 transition-opacity hover:opacity-50"
                 >
-                  @mmmbopnet
+                  @thehansonhotline
                 </a>
                 .
               </p>
             </div>
-
           </div>
         </section>
-
 
         {/* =====================================================
             FOOTER / DISCLAIMER
@@ -171,7 +160,6 @@ export default function Contact() {
         <footer className="border-t border-black/10 bg-white">
           <div className="mx-auto max-w-[1200px] px-6 py-16 md:px-10">
             <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
-
               <p className="text-sm font-semibold text-black">
                 Hanson Hotline
               </p>
@@ -189,7 +177,6 @@ export default function Contact() {
                 </a>
                 .
               </p>
-
             </div>
           </div>
         </footer>
@@ -197,7 +184,6 @@ export default function Contact() {
     </div>
   )
 }
-
 
 /* =========================================================
    SOCIAL CARD
