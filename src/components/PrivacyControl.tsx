@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 const CONSENT_KEY = "hansonhotline-analytics-consent"
-const CLOUDFLARE_TOKEN = "YOUR_CLOUDFLARE_WEB_ANALYTICS_TOKEN"
+const CLOUDFLARE_TOKEN = "7ee9f85f28b54d248d00833c6272e97f"
 const SCRIPT_ID = "cloudflare-web-analytics"
 
 type AnalyticsPreference = "enabled" | "disabled"
