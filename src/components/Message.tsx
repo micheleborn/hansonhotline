@@ -19,19 +19,19 @@ const toneStyles: Record<
 > = {
   isaac: {
     name: "text-black",
-    avatar: "bg-[#e8e4dc] text-black/65",
+    avatar: "bg-[#f6c745] text-black",
     bubble: "border-black/10",
   },
 
   taylor: {
     name: "text-black",
-    avatar: "bg-[#e8e4dc] text-black/65",
+    avatar: "bg-[#ee9249] text-black",
     bubble: "border-black/10",
   },
 
   zac: {
     name: "text-black",
-    avatar: "bg-[#e8e4dc] text-black/65",
+    avatar: "bg-[#66c1ba] text-black",
     bubble: "border-black/10",
   },
 }

@@ -44,63 +44,62 @@ export default function Hero({ onRandomMessage }: HeroProps) {
           {/* DESCRIPTION */}
           <p className="mx-auto mt-7 max-w-[650px] text-[17px] leading-relaxed text-black/55 md:text-[19px]">
             Original Hanson Hotline recordings and transcripts, <br /> preserved from
-            1997–2003.
+            1997–2005.
           </p>
 
           {/* PHONE STAGE */}
           <div className="relative mx-auto mt-8 max-w-[820px]">
-            {/* DESKTOP RINGS */}
+          {/* DESKTOP RINGS */}
 
-            <img
-              src={ring1}
-              alt=""
-              aria-hidden="true"
-              className="ring-img ring-img-one absolute left-[-2%] top-[7%] z-20 hidden w-[170px] select-none md:block lg:left-[-4%] lg:w-[190px]"
-              draggable="false"
-            />
+<img
+  src={ring1}
+  alt=""
+  aria-hidden="true"
+  className="ring-img ring-img-one absolute left-[-2%] top-[7%] z-20 hidden w-[135px] select-none md:block lg:left-[-4%] lg:w-[150px]"
+  draggable="false"
+/>
 
-            <img
-              src={ring2}
-              alt=""
-              aria-hidden="true"
-              className="ring-img ring-img-two absolute right-[-2%] top-[11%] z-20 hidden w-[175px] select-none md:block lg:right-[-5%] lg:w-[195px]"
-              draggable="false"
-            />
+<img
+  src={ring2}
+  alt=""
+  aria-hidden="true"
+  className="ring-img ring-img-two absolute right-[-2%] top-[11%] z-20 hidden w-[140px] select-none md:block lg:right-[-5%] lg:w-[155px]"
+  draggable="false"
+/>
 
-            <img
-              src={ring3}
-              alt=""
-              aria-hidden="true"
-              className="ring-img ring-img-three absolute bottom-[20%] left-[-1%] z-20 hidden w-[185px] select-none md:block lg:left-[-5%] lg:w-[205px]"
-              draggable="false"
-            />
+<img
+  src={ring3}
+  alt=""
+  aria-hidden="true"
+  className="ring-img ring-img-three absolute bottom-[20%] left-[-1%] z-20 hidden w-[145px] select-none md:block lg:left-[-5%] lg:w-[165px]"
+  draggable="false"
+/>
 
-            <img
-              src={ring4}
-              alt=""
-              aria-hidden="true"
-              className="ring-img ring-img-four absolute bottom-[21%] right-[-2%] z-20 hidden w-[165px] select-none md:block lg:right-[-4%] lg:w-[185px]"
-              draggable="false"
-            />
+<img
+  src={ring4}
+  alt=""
+  aria-hidden="true"
+  className="ring-img ring-img-four absolute bottom-[21%] right-[-2%] z-20 hidden w-[130px] select-none md:block lg:right-[-4%] lg:w-[150px]"
+  draggable="false"
+/>
 
-            {/* MOBILE RINGS */}
+{/* MOBILE RINGS */}
 
-            <img
-              src={ring1}
-              alt=""
-              aria-hidden="true"
-              className="ring-img ring-mobile-one absolute left-[-14px] top-[13%] z-20 w-[94px] select-none md:hidden"
-              draggable="false"
-            />
+<img
+  src={ring1}
+  alt=""
+  aria-hidden="true"
+  className="ring-img ring-mobile-one absolute left-[-8px] top-[13%] z-20 w-[76px] select-none md:hidden"
+  draggable="false"
+/>
 
-            <img
-              src={ring2}
-              alt=""
-              aria-hidden="true"
-              className="ring-img ring-mobile-two absolute right-[-12px] top-[23%] z-20 w-[102px] select-none md:hidden"
-              draggable="false"
-            />
-
+<img
+  src={ring2}
+  alt=""
+  aria-hidden="true"
+  className="ring-img ring-mobile-two absolute right-[-7px] top-[23%] z-20 w-[82px] select-none md:hidden"
+  draggable="false"
+/>
             {/* PHONE */}
 
             <button
@@ -136,7 +135,7 @@ export default function Hero({ onRandomMessage }: HeroProps) {
             {/* YEARS */}
 
             <p className="mt-5 text-[10px] font-bold tracking-[0.27em] text-black/30">
-              1997 — 2003
+              1997 — 2005
             </p>
 
             {/* ARCHIVE LINK */}

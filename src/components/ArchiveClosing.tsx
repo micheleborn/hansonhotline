@@ -88,7 +88,7 @@ export default function ArchiveClosing() {
         {/* CLOSING LINE */}
         <div className="pt-12 text-center md:pt-16">
           <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-black/30">
-            1997 — 2003 · Preserved on HansonHotline.com
+            1997 — 2005 · Preserved on HansonHotline.com
           </p>
         </div>
 

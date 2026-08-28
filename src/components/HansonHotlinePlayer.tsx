@@ -92,11 +92,11 @@ export default function HansonHotlinePlayer() {
     <div className="mx-auto max-w-[870px] rounded-[34px] bg-black px-8 py-8 text-white md:px-12 md:py-10">
         {/* Top row */}
         <div className="flex items-center justify-between gap-6">
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#c98652]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#f6c745]">
             Featured audio
           </p>
 
-          <span className="rounded-full bg-[#fcf9be] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-black/65">
+          <span className="rounded-full bg-[#fff] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-black/65">
             Archive audio
           </span>
         </div>

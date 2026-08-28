@@ -27,7 +27,7 @@ const DEFAULT_ITEMS: Item[] = [
       "Read transcripts as structured entries",
     ],
     stats: [
-      { label: "Era", value: "1997–2003", sub: "peak archive range" },
+      { label: "Era", value: "1997–2005", sub: "peak archive range" },
       { label: "Format", value: "Voicemail", sub: "short audio updates" },
     ],
   },
