@@ -57,9 +57,9 @@ export default function Contact() {
             <SocialCard
               eyebrow="The person behind it"
               title="Michele"
-              handle="@quietoodes"
+              handle="@thequietodes"
               description="Design, development, drawings and the other things I'm making."
-              href="https://www.instagram.com/quietoodes/"
+              href="https://www.instagram.com/thequietodes/"
               yellow
             />
           </div>

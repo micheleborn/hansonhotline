@@ -1,6 +1,39 @@
+import { useEffect, useState } from "react"
 import Header from "../components/header"
 
 export default function About() {
+  const [activeSection, setActiveSection] = useState("hotline")
+
+  useEffect(() => {
+    const sectionIds = ["hotline", "project", "creator"]
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntries = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+
+        if (visibleEntries.length > 0) {
+          setActiveSection(visibleEntries[0].target.id)
+        }
+      },
+      {
+        rootMargin: "-20% 0px -55% 0px",
+        threshold: [0, 0.1, 0.25, 0.5],
+      }
+    )
+
+    sectionIds.forEach((id) => {
+      const section = document.getElementById(id)
+
+      if (section) {
+        observer.observe(section)
+      }
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="min-h-screen bg-white text-black">
       <Header />
@@ -16,21 +49,36 @@ export default function About() {
           >
             <a
               href="#hotline"
-              className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
+              className={[
+                "rounded-full px-5 py-2 text-sm font-medium transition",
+                activeSection === "hotline"
+                  ? "bg-white text-black shadow-sm"
+                  : "text-black/55 hover:bg-white hover:text-black",
+              ].join(" ")}
             >
               Hanson Hotline
             </a>
 
             <a
               href="#project"
-              className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
+              className={[
+                "rounded-full px-5 py-2 text-sm font-medium transition",
+                activeSection === "project"
+                  ? "bg-white text-black shadow-sm"
+                  : "text-black/55 hover:bg-white hover:text-black",
+              ].join(" ")}
             >
               Project Notes
             </a>
 
             <a
               href="#creator"
-              className="rounded-full px-5 py-2 text-sm font-medium text-black/55 transition hover:bg-white hover:text-black"
+              className={[
+                "rounded-full px-5 py-2 text-sm font-medium transition",
+                activeSection === "creator"
+                  ? "bg-white text-black shadow-sm"
+                  : "text-black/55 hover:bg-white hover:text-black",
+              ].join(" ")}
             >
               The Creator
             </a>
@@ -276,12 +324,12 @@ export default function About() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/quietoodes/"
+                  href="https://www.instagram.com/thequietodes/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-black underline decoration-1 underline-offset-4 transition-opacity hover:opacity-50"
                 >
-                  @quietoodes
+                  @thequietodes
                 </a>
               </div>
             </div>
@@ -378,4 +426,3 @@ function StatCard({
     </article>
   )
 }
-
